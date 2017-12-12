@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,29 +63,29 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7053563D0305556F5934B7C65CF699A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		738A64270EA135190C254CDC20A1C226 /* Pods-second handTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-second handTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7953A07CEF172EBC0EE2E77CBEF7FF84 /* Pods-second handTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-second handTests.modulemap"; sourceTree = "<group>"; };
+		7953A07CEF172EBC0EE2E77CBEF7FF84 /* Pods-second handTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-second handTests.modulemap"; sourceTree = "<group>"; };
 		806E866C8906CF97A0F2102090265347 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
-		80A56D83DF28F69CE17D9C86AAECFF4A /* Pods_second_handUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_second_handUITests.framework; path = "Pods-second handUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A56D83DF28F69CE17D9C86AAECFF4A /* Pods_second_handUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_handUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8131792BBEE6A90CF9918BAC65034066 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		81E42C6239C504A37A9B522AE53A2F3E /* Pods-second hand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-second hand.release.xcconfig"; sourceTree = "<group>"; };
 		82B8139475C5A08863EF6635210DB762 /* Pods-second hand-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-second hand-acknowledgements.plist"; sourceTree = "<group>"; };
 		86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
 		893C79FBCD62752F57DEBC77BAB4048D /* Pods-second hand-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-second hand-resources.sh"; sourceTree = "<group>"; };
 		8C13156D30D470663AD8E2F0122EFC96 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
-		8D46AFD27B79B6B2E9601BB947014B18 /* Pods-second handUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-second handUITests.modulemap"; sourceTree = "<group>"; };
-		8F98A9C6ECA2322A5BAF5C0BF2F52F9A /* Pods_second_hand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_second_hand.framework; path = "Pods-second hand.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D46AFD27B79B6B2E9601BB947014B18 /* Pods-second handUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-second handUITests.modulemap"; sourceTree = "<group>"; };
+		8F98A9C6ECA2322A5BAF5C0BF2F52F9A /* Pods_second_hand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_hand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9133FAE39EB1D9892F29355AB69358DC /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9773C24029052FBB9C88B362ECD353CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C311EFE89B2441919C4AA247FCE95EF /* Pods-second hand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-second hand.debug.xcconfig"; sourceTree = "<group>"; };
-		9E02C9C946E587E73CEBC76713796A6F /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		9E02C9C946E587E73CEBC76713796A6F /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
 		A1B985645CADD42277D702523CAFDD1E /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		B497495737471958099823C87C83F53C /* Pods-second handTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-second handTests-resources.sh"; sourceTree = "<group>"; };
 		BC2C3490F5194C7714570F38D6D2E481 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
 		BEAF0C4A77299FF46FD6E3A2563AFB41 /* Pods-second handTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-second handTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C192E7658787E3E899F644BEE09282A9 /* Pods-second hand.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-second hand.modulemap"; sourceTree = "<group>"; };
+		C192E7658787E3E899F644BEE09282A9 /* Pods-second hand.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-second hand.modulemap"; sourceTree = "<group>"; };
 		CCFF4F892ED8773C7DF66C2D407484E1 /* Pods-second hand-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-second hand-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D097D41352DE239AF720E0CAA3633240 /* Pods_second_handTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_second_handTests.framework; path = "Pods-second handTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D097D41352DE239AF720E0CAA3633240 /* Pods_second_handTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_handTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC87E611353BF3C7BEAD369468A40E30 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6472965B50FB550F1E374D7B33A9D5F /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		EA41ABE7E8044E307DD3D0746029A71D /* Pods-second handUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-second handUITests-dummy.m"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		EAA4561F2560B2E9C511447237F9C3EE /* Pods-second hand-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-second hand-frameworks.sh"; sourceTree = "<group>"; };
 		EC00740EA2F2C143B15873CB6AFA90E6 /* Pods-second handTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-second handTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F09F4597D217F82B4CE2BCE6C8625D76 /* Pods-second hand-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-second hand-umbrella.h"; sourceTree = "<group>"; };
-		F75A95C732D18C0A7C634263DD6EB633 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75A95C732D18C0A7C634263DD6EB633 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +179,6 @@
 				86E63D044812E3765F6EDA42828A72C4 /* YoshikoTextField.swift */,
 				0886DF59C26D74FEC40625067FDEB830 /* Support Files */,
 			);
-			name = TextFieldEffects;
 			path = TextFieldEffects;
 			sourceTree = "<group>";
 		};
@@ -389,7 +388,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -582,6 +581,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
