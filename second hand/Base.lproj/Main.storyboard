@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerID" id="BYZ-38-t0r" customClass="ViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Big Button"/>
                                 <connections>
-                                    <segue destination="yhp-zy-7Zx" kind="show" id="bat-Gw-DTK"/>
+                                    <segue destination="yhp-zy-7Zx" kind="show" id="1PX-mU-WpM"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="second Label" translatesAutoresizingMaskIntoConstraints="NO" id="Mav-WK-sZ1">
@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1693.5999999999999" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="d89-tL-I3L">
             <objects>
-                <viewController id="yhp-zy-7Zx" sceneMemberID="viewController">
+                <viewController id="yhp-zy-7Zx" customClass="signupViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tIH-YR-rVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,24 +135,6 @@
                                 <rect key="frame" x="49" y="106" width="326" height="455"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wB-8W-kdi" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="16" y="275" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入學校信箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZQ-Wu-qHX" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="16" y="330" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,11 +179,37 @@
                                 <rect key="frame" x="40" y="468" width="295" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="註冊button"/>
+                                <connections>
+                                    <action selector="signupButtom:" destination="yhp-zy-7Zx" eventType="touchUpInside" id="rwm-58-FFg"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入姓名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wB-8W-kdi" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="274" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="972-di-FdX"/>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="TZQ-Wu-qHX" id="zbY-2Q-eQS"/>
+                        <outlet property="userNameTextField" destination="4wB-8W-kdi" id="J3A-Vv-2PI"/>
+                        <outlet property="userPasswordTextField" destination="DKr-af-FCR" id="rui-TU-bPT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJI-6i-GeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
