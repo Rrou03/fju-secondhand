@@ -43,7 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Big Button Copy"/>
                                 <connections>
-                                    <segue destination="aqi-b2-ZWw" kind="show" id="YY8-Fh-gk9"/>
+                                    <segue destination="aqi-b2-ZWw" kind="show" id="PCB-85-A1U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Signin View Controller-->
         <scene sceneID="bGd-WL-syo">
             <objects>
-                <viewController id="aqi-b2-ZWw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signinViewController" id="aqi-b2-ZWw" customClass="signinViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8k7-Uu-zjH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,31 +72,8 @@
                                 <rect key="frame" x="156" y="221" width="63" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入學生信箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-Mm-1TM" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="16" y="305" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xng-c2-xTb">
-                                <rect key="frame" x="40" y="426" width="295" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="登入button"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入密碼" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-LT-asY" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="16" y="366" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入密碼" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7NE-ZG-Xfw" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="361" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -113,11 +90,41 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xng-c2-xTb">
+                                <rect key="frame" x="40" y="426" width="295" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="登入button"/>
+                                <connections>
+                                    <action selector="signinB:" destination="aqi-b2-ZWw" eventType="touchUpInside" id="U6o-De-QBF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入學生信箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-Mm-1TM" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="294" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BPX-cc-VNa"/>
                     </view>
                     <navigationItem key="navigationItem" id="eCk-We-iRK"/>
+                    <connections>
+                        <outlet property="EmailT" destination="Ke3-Mm-1TM" id="0F6-Iw-naL"/>
+                        <outlet property="PasswordT" destination="7NE-ZG-Xfw" id="bUh-l5-e8h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abg-wD-pg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,6 +222,39 @@
             </objects>
             <point key="canvasLocation" x="1694" y="841"/>
         </scene>
+        <!--Success View Controller-->
+        <scene sceneID="hU9-X1-f1X">
+            <objects>
+                <viewController storyboardIdentifier="SuccessViewControllerID" id="rcS-gM-ljp" customClass="SuccessViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CfH-l4-NZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bubbleBg" translatesAutoresizingMaskIntoConstraints="NO" id="KVl-wZ-ojG">
+                                <rect key="frame" x="49" y="106" width="326" height="455"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="註冊成功！" translatesAutoresizingMaskIntoConstraints="NO" id="1QX-9i-j7r">
+                                <rect key="frame" x="131" y="251" width="112" height="25"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80m-az-Src">
+                                <rect key="frame" x="40" y="358" width="295" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="登入button"/>
+                                <connections>
+                                    <segue destination="aqi-b2-ZWw" kind="show" id="5hq-Ly-OSq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6c2-Ze-J62"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nC5-v7-I0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.5999999999999" y="1524.2878560719641"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cge-zY-7jO">
             <objects>
@@ -244,5 +284,9 @@
         <image name="登入button" width="295" height="50"/>
         <image name="註冊 Label" width="48" height="24"/>
         <image name="註冊button" width="295" height="50"/>
+        <image name="註冊成功！" width="112" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="PCB-85-A1U"/>
+    </inferredMetricsTieBreakers>
 </document>

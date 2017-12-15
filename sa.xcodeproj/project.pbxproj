@@ -10,6 +10,8 @@
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
 		C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */; };
+		C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */; };
+		C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */; };
 		C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */; };
 		C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */; };
 		C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
 		C0BB44651FCE5DB100EF7BF3 /* second hand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "second hand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C072E9B01FE3F13A00A2DFE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */,
+				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
+				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
+				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C0BB445C1FCE5DB100EF7BF3 = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +163,7 @@
 				C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */,
 				C0BB44741FCE5DB100EF7BF3 /* Info.plist */,
 				C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */,
-				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
-				C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */,
+				C072E9B01FE3F13A00A2DFE2 /* Controller */,
 			);
 			path = "second hand";
 			sourceTree = "<group>";
@@ -483,7 +497,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
+				C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
+				C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */,
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

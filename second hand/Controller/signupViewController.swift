@@ -32,25 +32,32 @@ class signupViewController: UIViewController {
     
     
     @IBAction func signupButtom(_ sender: Any) {
-        if self.userEmailTextField.text != "" || self.userPasswordTextField.text != ""{
+        
+        if userNameTextField.text != "" && userEmailTextField.text!.hasSuffix("@mail.fju.edu.tw") && userPasswordTextField.text!.count >= 6  {
             
             Auth.auth().createUser(withEmail: self.userEmailTextField.text!,  password: self.userPasswordTextField.text!, completion:{(user, error) in
                 if error == nil {
                     if let user = Auth.auth().currentUser{
                         self.uid = user.uid
-                        print("You have successfully signed up")
-                    
                     }
+                    print("You have successfully signed up")
+                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Username").setValue(self.userNameTextField.text)
+                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Password").setValue(self.userPasswordTextField.text)
+                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Email").setValue(self.userEmailTextField.text)
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "SuccessViewControllerID") as! SuccessViewController
+                    self.present(vc, animated: true, completion: nil)
+                }else{
+                    print("fail")
                 }
                 
-                Database.database().reference(withPath: "ID/\(self.uid)/Profile/Username").setValue(self.userNameTextField.text)
-                Database.database().reference(withPath: "ID/\(self.uid)/Profile/Safety-Check").setValue("ON")
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "ViewControllerID") as! ViewController
-                self.present(vc, animated: true, completion: nil)
-               
-                
             }  )
+        }else{
+             let errorController = UIAlertController(title: "Error", message: "請輸入正確的學校信箱或密碼(至少需六位元)", preferredStyle: .alert)
+            let errorActionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
+            errorController.addAction(errorActionOK)
+            self.present(errorController, animated: true, completion: nil)
+           
         }
         
     }
