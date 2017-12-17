@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
+		C02E224B1FE6167D00FC8567 /* rent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02E224A1FE6167D00FC8567 /* rent.storyboard */; };
+		C02E224D1FE6384B00FC8567 /* rentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E224C1FE6384B00FC8567 /* rentViewController.swift */; };
 		C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */; };
 		C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */; };
 		C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */; };
@@ -48,6 +50,8 @@
 		77F75BA36C3B30275D9DBB56 /* Pods-second handUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		C02E224A1FE6167D00FC8567 /* rent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rent.storyboard; sourceTree = "<group>"; };
+		C02E224C1FE6384B00FC8567 /* rentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentViewController.swift; sourceTree = "<group>"; };
 		C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */,
+				C02E224A1FE6167D00FC8567 /* rent.storyboard */,
+				C02E224C1FE6384B00FC8567 /* rentViewController.swift */,
 				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
 				C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */,
 				C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */,
@@ -313,6 +319,7 @@
 				C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */,
 				C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */,
 				C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */,
+				C02E224B1FE6167D00FC8567 /* rent.storyboard in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +441,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-second hand/Pods-second hand-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DOPDropDownMenu-Enhanced/DOPDropDownMenu_Enhanced.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
@@ -442,6 +450,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DOPDropDownMenu_Enhanced.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
@@ -496,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02E224D1FE6384B00FC8567 /* rentViewController.swift in Sources */,
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
 				C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,

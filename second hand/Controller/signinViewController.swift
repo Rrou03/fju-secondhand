@@ -40,8 +40,8 @@ class signinViewController: UIViewController {
                         self.uid = user.uid
                     }
                     Database.database().reference(withPath:"online status/\(self.uid)").setValue("ON")
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "SuccessViewControllerID") as! SuccessViewController
+                    let storyboard = UIStoryboard(name: "rent", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: "rentViewControllerID") as! rentViewController
                     self.present(vc, animated: true, completion: nil)
                 }else{
                     let errorController = UIAlertController(title: "Error", message: "帳號或密碼錯誤", preferredStyle: .alert)
