@@ -295,6 +295,112 @@
                                     <constraint firstAttribute="trailing" secondItem="W1Q-qV-NVA" secondAttribute="trailing" constant="20" id="oHc-bT-BwN"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jPV-2s-Dmk">
+                                <rect key="frame" x="200" y="80" width="175" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htc-07-QJt">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.80128691750399661" green="0.7697698100067345" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="CFB-DM-tzc"/>
+                                            <constraint firstAttribute="height" constant="40" id="RIg-xG-wzw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="排序  ▼">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="GGL-eJ-D2a"/>
+                                            <action selector="handleselection2:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="y31-Le-ypx"/>
+                                            <action selector="handleselection:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="P2T-FD-hvU"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mt-Wz-koc">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.87362161138580974" green="1" blue="0.64379843535461978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="88o-4S-CKb"/>
+                                            <constraint firstAttribute="width" constant="175" id="AoK-1D-ApD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="價錢少到多">
+                                            <color key="titleColor" red="0.074580270860000006" green="0.34177558559999999" blue="0.76613099090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="SPB-DZ-teW"/>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="f81-4H-bJW"/>
+                                            <action selector="y:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="M41-G6-amh"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z6-M1-iLD">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.87362161138580974" green="1" blue="0.64379843535461978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FyF-5J-ybg"/>
+                                            <constraint firstAttribute="width" constant="175" id="xXX-FR-JAf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="價錢多到少">
+                                            <color key="titleColor" red="0.074580270860000006" green="0.34177558559999999" blue="0.76613099090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="5ro-l4-mvZ"/>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="aTG-Wk-R9f"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5S-eH-Wdt">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.87362161138580974" green="1" blue="0.64379843535461978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="51X-Mn-wxN"/>
+                                            <constraint firstAttribute="height" constant="40" id="ChT-if-8xf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="貼文時間新到舊">
+                                            <color key="titleColor" red="0.074580270860000006" green="0.34177558559999999" blue="0.76613099090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="nqn-Vl-cwB"/>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="RXc-sf-9HK"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMU-1o-eWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.87362161138580974" green="1" blue="0.64379843535461978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="A4S-7d-oyo"/>
+                                            <constraint firstAttribute="height" constant="40" id="Tmh-xc-fek"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="貼文時間舊到新">
+                                            <color key="titleColor" red="0.074580270860000006" green="0.34177558559999999" blue="0.76613099090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="32L-zk-0qw"/>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="RF9-iR-pjF"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wN-D4-sCh">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="0.87362161138580974" green="1" blue="0.64379843535461978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="iri-gX-p73"/>
+                                            <constraint firstAttribute="height" constant="40" id="p40-KW-DWE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="熱門度（♥️）">
+                                            <color key="titleColor" red="0.074580270860000006" green="0.34177558559999999" blue="0.76613099090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arrangetapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="CdA-jY-fJx"/>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="eVz-yH-eQW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="htc-07-QJt" secondAttribute="trailing" constant="20" id="fSA-qp-Ono"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -314,6 +420,11 @@
                         <outletCollection property="categorybuttons" destination="hXp-iJ-nYP" collectionClass="NSMutableArray" id="rPr-EX-oie"/>
                         <outletCollection property="categorybuttons" destination="UZL-pT-Pgy" collectionClass="NSMutableArray" id="0ut-OR-7ng"/>
                         <outletCollection property="categorybuttons" destination="Qq6-q5-m9K" collectionClass="NSMutableArray" id="ww4-h6-XAc"/>
+                        <outletCollection property="arrangebutton" destination="9mt-Wz-koc" collectionClass="NSMutableArray" id="mT5-Pc-Tdj"/>
+                        <outletCollection property="arrangebutton" destination="2Z6-M1-iLD" collectionClass="NSMutableArray" id="6nP-gV-5Pf"/>
+                        <outletCollection property="arrangebutton" destination="j5S-eH-Wdt" collectionClass="NSMutableArray" id="sjL-ys-pKS"/>
+                        <outletCollection property="arrangebutton" destination="RMU-1o-eWd" collectionClass="NSMutableArray" id="Yae-J8-LMo"/>
+                        <outletCollection property="arrangebutton" destination="5wN-D4-sCh" collectionClass="NSMutableArray" id="2if-bO-7Ny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wok-Ad-XEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
