@@ -124,6 +124,203 @@
             <point key="canvasLocation" x="1693.5999999999999" y="82.3088455772114"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="fZx-CJ-fkr">
+            <objects>
+                <viewController id="b0d-4i-Ozj" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xcq-M0-hSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKJ-5x-cJi">
+                                <rect key="frame" x="7" y="26" width="57" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Back" image="返回鍵"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rcd-u5-8yQ">
+                                <rect key="frame" x="0.0" y="80" width="175" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1Q-qV-NVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.70800329330238831" blue="0.75048179832764628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HcE-bH-4gW"/>
+                                            <constraint firstAttribute="width" constant="175" id="Hvr-bP-7s4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="分類   ▼">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleselection:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="OIk-CP-g2b"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2h-q6-JHN">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="Kb7-Ug-apk"/>
+                                            <constraint firstAttribute="height" constant="40" id="pcc-q8-F00"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="服飾">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="OCn-az-vzD"/>
+                                            <action selector="y:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="cPA-n4-6BW"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsb-Mh-3SU">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FGr-oQ-kas"/>
+                                            <constraint firstAttribute="width" constant="175" id="LA7-eE-zeN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="化妝保養">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="spE-Ss-0oB"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KS-T2-DA2">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0Zr-ve-YvD"/>
+                                            <constraint firstAttribute="width" constant="175" id="GB9-c2-5vF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="課本">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="bpK-Ly-sgr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpU-uN-Jh2">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="7IB-FE-t1x"/>
+                                            <constraint firstAttribute="height" constant="40" id="9Dg-IA-Mxw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="食品">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="d4d-uw-dYE"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibw-Em-Lbr">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="Tjh-Kf-TK0"/>
+                                            <constraint firstAttribute="height" constant="40" id="VUV-Mp-FNK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="生活用品">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="TF0-CZ-c3H"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkS-Q6-uPy">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="Bor-7e-EY5"/>
+                                            <constraint firstAttribute="height" constant="40" id="vHY-5T-3qd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="傢俱">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="Ii2-XP-hNw"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXp-iJ-nYP">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UYE-Fg-q27"/>
+                                            <constraint firstAttribute="width" constant="175" id="dEG-GD-0H7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="3C產品">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="G46-QT-yhb"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZL-pT-Pgy">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="TQ5-qT-nxJ"/>
+                                            <constraint firstAttribute="height" constant="40" id="cen-Jy-227"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="失物招領">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="h2q-j0-xw3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq6-q5-m9K">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.97021685059999996" blue="0.55743471659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CZg-yc-RhR"/>
+                                            <constraint firstAttribute="width" constant="175" id="Dap-Yl-KZT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="其他">
+                                            <color key="titleColor" red="0.074580270861438813" green="0.34177558562127947" blue="0.76613099093264247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categorytapped:" destination="b0d-4i-Ozj" eventType="touchUpInside" id="lrg-q3-KhC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="W1Q-qV-NVA" secondAttribute="trailing" constant="20" id="oHc-bT-BwN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rcd-u5-8yQ" firstAttribute="leading" secondItem="uPy-gk-wLT" secondAttribute="leading" id="pcY-2T-P7Q"/>
+                            <constraint firstItem="uPy-gk-wLT" firstAttribute="trailing" secondItem="rcd-u5-8yQ" secondAttribute="trailing" id="t3k-Yf-tcB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPy-gk-wLT"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="categorybuttons" destination="U2h-q6-JHN" collectionClass="NSMutableArray" id="lcJ-lK-deo"/>
+                        <outletCollection property="categorybuttons" destination="U2h-q6-JHN" collectionClass="NSMutableArray" id="ZsR-eV-aYj"/>
+                        <outletCollection property="categorybuttons" destination="lsb-Mh-3SU" collectionClass="NSMutableArray" id="vJq-q2-CJp"/>
+                        <outletCollection property="categorybuttons" destination="4KS-T2-DA2" collectionClass="NSMutableArray" id="8kV-0l-790"/>
+                        <outletCollection property="categorybuttons" destination="UpU-uN-Jh2" collectionClass="NSMutableArray" id="yhd-0J-zfH"/>
+                        <outletCollection property="categorybuttons" destination="ibw-Em-Lbr" collectionClass="NSMutableArray" id="TUk-9r-4RB"/>
+                        <outletCollection property="categorybuttons" destination="MkS-Q6-uPy" collectionClass="NSMutableArray" id="Tax-a1-JOD"/>
+                        <outletCollection property="categorybuttons" destination="hXp-iJ-nYP" collectionClass="NSMutableArray" id="rPr-EX-oie"/>
+                        <outletCollection property="categorybuttons" destination="UZL-pT-Pgy" collectionClass="NSMutableArray" id="0ut-OR-7ng"/>
+                        <outletCollection property="categorybuttons" destination="Qq6-q5-m9K" collectionClass="NSMutableArray" id="ww4-h6-XAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wok-Ad-XEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2525.5999999999999" y="82.3088455772114"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="d89-tL-I3L">
             <objects>
                 <viewController id="yhp-zy-7Zx" sceneMemberID="viewController">
@@ -225,147 +422,13 @@
             </objects>
             <point key="canvasLocation" x="164" y="84"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="onc-xk-ETW">
-            <objects>
-                <viewController id="KKY-ju-geA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="49d-Yb-CZW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Container" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-vC-0IO">
-                                <rect key="frame" x="0.0" y="100" width="194" height="474"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Navigation Bar-1" translatesAutoresizingMaskIntoConstraints="NO" id="B7U-47-Yg9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-bD-pcp">
-                                <rect key="frame" x="314" y="18" width="61" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Right"/>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="ivc-A1-8Xh">
-                                <rect key="frame" x="73" y="26" width="230" height="32"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5c-yZ-dJX">
-                                <rect key="frame" x="0.0" y="73" width="171" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="分類（細）"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x9-BL-vVq">
-                                <rect key="frame" x="187" y="73" width="188" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="排序（細）"/>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="seperator" translatesAutoresizingMaskIntoConstraints="NO" id="rnN-AQ-x7o">
-                                <rect key="frame" x="178" y="73" width="1" height="19"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="IJg-JM-88W">
-                                <rect key="frame" x="0.0" y="616" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jh-gE-QiX">
-                                <rect key="frame" x="285" y="619" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="person"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSP-v9-28d">
-                                <rect key="frame" x="113" y="618" width="45" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Shape"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-Tf-1dZ">
-                                <rect key="frame" x="200" y="619" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="bell"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJw-DM-iMQ">
-                                <rect key="frame" x="27" y="619" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="shop_center_round "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrL-KS-ZcI">
-                                <rect key="frame" x="0.0" y="27" width="57" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" Back" image="返回鍵"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7e-1a-EYa">
-                                <rect key="frame" x="16" y="118" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="服飾"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC9-Bt-7Cn">
-                                <rect key="frame" x="16" y="170" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="化妝保養"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuR-oK-lTp">
-                                <rect key="frame" x="17" y="216" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="課本"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5b0-xV-0tb">
-                                <rect key="frame" x="16" y="311" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="生活用品"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RD-3x-93D">
-                                <rect key="frame" x="17" y="362" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="傢俱"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUz-2Y-Pn7">
-                                <rect key="frame" x="20" y="458" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="失物招領"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJV-ct-DRL">
-                                <rect key="frame" x="17" y="508" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="其他"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15A-wF-bmZ">
-                                <rect key="frame" x="20" y="411" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="3C產品"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgC-ry-HuU">
-                                <rect key="frame" x="16" y="264" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="食品"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="Y6J-jV-Ret"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="38h-Si-d3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2544.8000000000002" y="82.3088455772114"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Big Button" width="181" height="46"/>
         <image name="Big Button Copy" width="181" height="46"/>
-        <image name="Container" width="194" height="474"/>
-        <image name="Navigation Bar-1" width="375" height="65"/>
-        <image name="Rectangle" width="375" height="50"/>
-        <image name="Right" width="20" height="20"/>
-        <image name="Shape" width="38" height="43"/>
-        <image name="bell" width="34" height="42"/>
         <image name="bubbleBg" width="326" height="455"/>
         <image name="hand Label" width="222" height="87"/>
-        <image name="person" width="74" height="84"/>
-        <image name="search" width="230" height="32"/>
         <image name="second Label" width="255" height="79"/>
-        <image name="seperator" width="1" height="19"/>
-        <image name="shop_center_round " width="76" height="86"/>
-        <image name="分類（細）" width="188" height="28"/>
-        <image name="排序（細）" width="188" height="28"/>
         <image name="登入 Label" width="47" height="25"/>
         <image name="登入button" width="295" height="50"/>
         <image name="註冊 Label" width="48" height="24"/>
