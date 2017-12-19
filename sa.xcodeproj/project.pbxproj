@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
+		891670E81FE67D24003FD2E0 /* FireCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891670E71FE67D24003FD2E0 /* FireCollectionViewCell.swift */; };
+		891670EA1FE67D36003FD2E0 /* FireCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891670E91FE67D36003FD2E0 /* FireCollectionViewController.swift */; };
+		891670EC1FE7CBDC003FD2E0 /* TestProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891670EB1FE7CBDC003FD2E0 /* TestProduct.storyboard */; };
+		89BE1F571FE635B8007109BA /* product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BE1F561FE635B8007109BA /* product.storyboard */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
 		C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */; };
 		C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */; };
@@ -44,6 +48,10 @@
 		4226280A4FFE93E2390F72BA /* Pods_second_hand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_hand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B903CE4FDF4C24AB03DE86 /* Pods-second handTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handTests/Pods-second handTests.release.xcconfig"; sourceTree = "<group>"; };
 		77F75BA36C3B30275D9DBB56 /* Pods-second handUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.release.xcconfig"; sourceTree = "<group>"; };
+		891670E71FE67D24003FD2E0 /* FireCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireCollectionViewCell.swift; sourceTree = "<group>"; };
+		891670E91FE67D36003FD2E0 /* FireCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireCollectionViewController.swift; sourceTree = "<group>"; };
+		891670EB1FE7CBDC003FD2E0 /* TestProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestProduct.storyboard; sourceTree = "<group>"; };
+		89BE1F561FE635B8007109BA /* product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = product.storyboard; sourceTree = "<group>"; };
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 		C0BB445C1FCE5DB100EF7BF3 = {
 			isa = PBXGroup;
 			children = (
+				891670EB1FE7CBDC003FD2E0 /* TestProduct.storyboard */,
+				89BE1F561FE635B8007109BA /* product.storyboard */,
+				891670E91FE67D36003FD2E0 /* FireCollectionViewController.swift */,
+				891670E71FE67D24003FD2E0 /* FireCollectionViewCell.swift */,
 				C0BB44671FCE5DB100EF7BF3 /* second hand */,
 				C0BB447C1FCE5DB200EF7BF3 /* second handTests */,
 				C0BB44871FCE5DB200EF7BF3 /* second handUITests */,
@@ -297,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */,
+				89BE1F571FE635B8007109BA /* product.storyboard in Resources */,
+				891670EC1FE7CBDC003FD2E0 /* TestProduct.storyboard in Resources */,
 				C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */,
 				C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
@@ -482,8 +496,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891670E81FE67D24003FD2E0 /* FireCollectionViewCell.swift in Sources */,
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
+				891670EA1FE67D36003FD2E0 /* FireCollectionViewController.swift in Sources */,
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
