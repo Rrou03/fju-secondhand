@@ -10,9 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var categorybuttons: [UIButton]!
-    
-    @IBOutlet var arrangebutton: [UIButton]!
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,21 +24,28 @@ class ViewController: UIViewController {
 
     @IBAction func handleselection(_ sender: UIButton) {
         categorybuttons.forEach { (button) in
-            button.isHidden = !button.isHidden
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        
             
         }
-    }
-    
-    @IBAction func categorytapped(_ sender: UIButton) {
     }
     
     @IBAction func handleselection2(_ sender: UIButton) {
         arrangebutton.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                 button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
             
-        button.isHidden = !button.isHidden
+            }
         }
+  
+    @IBAction func categorytapped(_ sender: UIButton) {
+       
     }
-    
     @IBAction func arrangetapped(_ sender: UIButton) {
     }
     
