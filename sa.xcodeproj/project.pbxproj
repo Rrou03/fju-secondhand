@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
+		B00BFECF1FE8D631002E36C7 /* PersonalPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00BFECE1FE8D631002E36C7 /* PersonalPage.storyboard */; };
+		B00BFED11FE8FE4E002E36C7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BFED01FE8FE4E002E36C7 /* StartViewController.swift */; };
+		B00BFED51FE9024C002E36C7 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00BFED41FE9024C002E36C7 /* MainNavigationController.swift */; };
+		B026F2C91FE9868F003A99B5 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026F2C81FE9868F003A99B5 /* UploadViewController.swift */; };
+		B026F2CB1FE98905003A99B5 /* ik.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B026F2CA1FE98905003A99B5 /* ik.jpg */; };
+		B040C6401FE92FB800C9FDD4 /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B040C63F1FE92FB800C9FDD4 /* e.jpg */; };
+		B0A8C1021FE841BF00636318 /* PersonalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A8C1011FE841BF00636318 /* PersonalPage.swift */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
 		C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */; };
 		C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */; };
@@ -45,6 +52,13 @@
 		73B903CE4FDF4C24AB03DE86 /* Pods-second handTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handTests/Pods-second handTests.release.xcconfig"; sourceTree = "<group>"; };
 		77F75BA36C3B30275D9DBB56 /* Pods-second handUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B00BFECE1FE8D631002E36C7 /* PersonalPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalPage.storyboard; sourceTree = "<group>"; };
+		B00BFED01FE8FE4E002E36C7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B00BFED41FE9024C002E36C7 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B026F2C81FE9868F003A99B5 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		B026F2CA1FE98905003A99B5 /* ik.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ik.jpg; sourceTree = "<group>"; };
+		B040C63F1FE92FB800C9FDD4 /* e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e.jpg; sourceTree = "<group>"; };
+		B0A8C1011FE841BF00636318 /* PersonalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPage.swift; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0BB44651FCE5DB100EF7BF3 /* second hand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "second hand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,12 +158,19 @@
 			children = (
 				C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */,
 				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
-				C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */,
+				B026F2C81FE9868F003A99B5 /* UploadViewController.swift */,
+				B00BFED41FE9024C002E36C7 /* MainNavigationController.swift */,
+				B00BFED01FE8FE4E002E36C7 /* StartViewController.swift */,
+				B00BFECE1FE8D631002E36C7 /* PersonalPage.storyboard */,
+				B0A8C1011FE841BF00636318 /* PersonalPage.swift */,
 				C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */,
-				C0BB44741FCE5DB100EF7BF3 /* Info.plist */,
-				C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */,
 				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
 				C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */,
+				C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */,
+				C0BB44741FCE5DB100EF7BF3 /* Info.plist */,
+				B026F2CA1FE98905003A99B5 /* ik.jpg */,
+				B040C63F1FE92FB800C9FDD4 /* e.jpg */,
+				C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */,
 			);
 			path = "second hand";
 			sourceTree = "<group>";
@@ -299,7 +320,10 @@
 				C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */,
 				C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */,
 				C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */,
+				B040C6401FE92FB800C9FDD4 /* e.jpg in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
+				B00BFECF1FE8D631002E36C7 /* PersonalPage.storyboard in Resources */,
+				B026F2CB1FE98905003A99B5 /* ik.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +446,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-second hand/Pods-second hand-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -430,6 +455,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -482,8 +508,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00BFED51FE9024C002E36C7 /* MainNavigationController.swift in Sources */,
+				B026F2C91FE9868F003A99B5 /* UploadViewController.swift in Sources */,
+				B00BFED11FE8FE4E002E36C7 /* StartViewController.swift in Sources */,
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
+				B0A8C1021FE841BF00636318 /* PersonalPage.swift in Sources */,
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,7 +684,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79ZVNGJ7FJ;
+				DEVELOPMENT_TEAM = 6NATB5LN22;
 				INFOPLIST_FILE = "second hand/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.second-hand765542418585";
@@ -670,7 +700,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79ZVNGJ7FJ;
+				DEVELOPMENT_TEAM = 6NATB5LN22;
 				INFOPLIST_FILE = "second hand/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.second-hand765542418585";
