@@ -17,14 +17,23 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eh7-Vj-qvz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mfS-YP-p1w"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i9r-Bo-86Z"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOH-Xr-Rld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-90" y="82"/>
+        </scene>
+        <!--rent-->
+        <scene sceneID="Adn-0d-HuA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="rent" id="31Z-qI-P0B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2X-DA-PdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="553"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -43,7 +52,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Big Button"/>
                                 <connections>
-                                    <segue destination="yhp-zy-7Zx" kind="show" id="1PX-mU-WpM"/>
+                                    <segue destination="yhp-zy-7Zx" kind="show" identifier="showSignUppage" id="1PX-mU-WpM"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="second Label" translatesAutoresizingMaskIntoConstraints="NO" id="Mav-WK-sZ1">
@@ -59,7 +68,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Big Button Copy"/>
                                 <connections>
-                                    <segue destination="aqi-b2-ZWw" kind="show" id="PCB-85-A1U"/>
+                                    <segue destination="aqi-b2-ZWw" kind="show" identifier="showSignPage" id="PCB-85-A1U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-zO-FlF">
+                                <rect key="frame" x="9" y="605" width="255" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="31Z-qI-P0B" kind="show" identifier="showrent" id="sSz-Cf-9ik"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,7 +93,7 @@
         <!--Signin View Controller-->
         <scene sceneID="bGd-WL-syo">
             <objects>
-                <viewController storyboardIdentifier="signinViewController" id="aqi-b2-ZWw" customClass="signinViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signinViewControllerID" id="aqi-b2-ZWw" customClass="signinViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8k7-Uu-zjH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +167,7 @@
         <!--Signup View Controller-->
         <scene sceneID="d89-tL-I3L">
             <objects>
-                <viewController id="yhp-zy-7Zx" customClass="signupViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signupViewControllerID" id="yhp-zy-7Zx" customClass="signupViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tIH-YR-rVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +277,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="登入button"/>
                                 <connections>
-                                    <segue destination="aqi-b2-ZWw" kind="show" id="5hq-Ly-OSq"/>
+                                    <segue destination="aqi-b2-ZWw" kind="show" identifier="backtoSigninPage" id="PPH-Lc-eaf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -285,6 +303,6 @@
         <image name="註冊成功！" width="112" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PCB-85-A1U"/>
+        <segue reference="PPH-Lc-eaf"/>
     </inferredMetricsTieBreakers>
 </document>

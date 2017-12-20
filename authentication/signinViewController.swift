@@ -14,11 +14,7 @@ import FirebaseDatabase
 class signinViewController: UIViewController {
     @IBOutlet weak var EmailT: UITextField!
     
-    @IBOutlet weak var PasswordT: UITextField!
-    
-    
-   
-    
+    @IBOutlet weak var PasswordT: UITextField!   
     var uid = ""
     
     override func viewDidLoad() {
@@ -41,7 +37,7 @@ class signinViewController: UIViewController {
                     }
                     Database.database().reference(withPath:"online status/\(self.uid)").setValue("ON")
                     let storyboard = UIStoryboard(name: "rent", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "rentViewControllerID") as! rentViewController
+                    let vc = storyboard.instantiateViewController(withIdentifier: "rentPostViewControllerID") as! rentPostViewController
                     self.present(vc, animated: true, completion: nil)
                 }else{
                     let errorController = UIAlertController(title: "Error", message: "帳號或密碼錯誤", preferredStyle: .alert)
@@ -59,16 +55,4 @@ class signinViewController: UIViewController {
             self.present(errorController, animated: true, completion: nil)
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

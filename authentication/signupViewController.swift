@@ -31,7 +31,7 @@ class signupViewController: UIViewController {
     }
     
     
-    @IBAction func signupButtom(_ sender: Any) {
+    @IBAction func signupButtom(_ sender: UIButton) {
         
         if userNameTextField.text != "" && userEmailTextField.text!.hasSuffix("@mail.fju.edu.tw") && userPasswordTextField.text!.count >= 6  {
             
@@ -41,14 +41,15 @@ class signupViewController: UIViewController {
                         self.uid = user.uid
                     }
                     print("You have successfully signed up")
-                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Username").setValue(self.userNameTextField.text)
-                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Password").setValue(self.userPasswordTextField.text)
-                    Database.database().reference(withPath: "ID/\(self.uid)/Profile/Email").setValue(self.userEmailTextField.text)
+                    Database.database().reference(withPath: "User/Profile/Username").setValue(self.userNameTextField.text)
+                    Database.database().reference(withPath: "User/Profile/Password").setValue(self.userPasswordTextField.text)
+                    Database.database().reference(withPath: "User/Profile/Email").setValue(self.userEmailTextField.text)
+                    Database.database().reference(withPath: "User/Profile/ID").setValue(self.uid)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "SuccessViewControllerID") as! SuccessViewController
                     self.present(vc, animated: true, completion: nil)
                 }else{
-                    print("fail")
+                    print("fail",error.debugDescription)
                 }
                 
             }  )
@@ -63,14 +64,5 @@ class signupViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
