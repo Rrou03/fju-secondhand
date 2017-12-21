@@ -9,6 +9,10 @@ target 'second hand' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'SwiftyJSON'
+
+
 
   target 'second handTests' do
     inherit! :search_paths
