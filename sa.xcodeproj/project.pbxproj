@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
+		B0066FF51FED55C300CCD3B7 /* PersonalPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */; };
+		B0066FF71FED5BF300CCD3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */; };
+		B0D164211FED235E0026A11D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164201FED235E0026A11D /* StartViewController.swift */; };
+		B0D164261FED2C790026A11D /* PersonalPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164251FED2C790026A11D /* PersonalPageController.swift */; };
+		B0D164281FED30CD0026A11D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164271FED30CD0026A11D /* MainNavigationController.swift */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
 		C034D4D01FE7857E00801B82 /* rent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034D4CF1FE7857E00801B82 /* rent.storyboard */; };
 		C034D4DF1FE8ED9100801B82 /* rentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034D4DE1FE8ED9100801B82 /* rentVC.swift */; };
@@ -21,7 +26,6 @@
 		C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */; };
 		C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */; };
 		C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */; };
-		C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */; };
 		C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */; };
 		C0BB44891FCE5DB200EF7BF3 /* second_handUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44881FCE5DB200EF7BF3 /* second_handUITests.swift */; };
 		C0EC4B8D1FEA3133008A5FF8 /* rentPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC4B8C1FEA3133008A5FF8 /* rentPostViewController.swift */; };
@@ -53,6 +57,11 @@
 		73B903CE4FDF4C24AB03DE86 /* Pods-second handTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handTests/Pods-second handTests.release.xcconfig"; sourceTree = "<group>"; };
 		77F75BA36C3B30275D9DBB56 /* Pods-second handUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalPage.storyboard; sourceTree = "<group>"; };
+		B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0D164201FED235E0026A11D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B0D164251FED2C790026A11D /* PersonalPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageController.swift; sourceTree = "<group>"; };
+		B0D164271FED30CD0026A11D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		C034D4CF1FE7857E00801B82 /* rent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rent.storyboard; sourceTree = "<group>"; };
 		C034D4DE1FE8ED9100801B82 /* rentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentVC.swift; sourceTree = "<group>"; };
@@ -66,7 +75,6 @@
 		C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0BB446D1FCE5DB100EF7BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0BB44721FCE5DB100EF7BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BB44741FCE5DB100EF7BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BB44791FCE5DB100EF7BF3 /* second handTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "second handTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +147,12 @@
 				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
 				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
 				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
+				B0D164251FED2C790026A11D /* PersonalPageController.swift */,
+				B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */,
 				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
+				B0D164201FED235E0026A11D /* StartViewController.swift */,
+				B0D164271FED30CD0026A11D /* MainNavigationController.swift */,
+				B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */,
 			);
 			path = authentication;
 			sourceTree = "<group>";
@@ -171,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				C0BB44681FCE5DB100EF7BF3 /* AppDelegate.swift */,
-				C0BB446F1FCE5DB100EF7BF3 /* Assets.xcassets */,
 				C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */,
 				C0BB44741FCE5DB100EF7BF3 /* Info.plist */,
 				C072E9AE1FE0C38500A2DFE2 /* GoogleService-Info.plist */,
@@ -336,8 +348,9 @@
 			files = (
 				C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */,
 				C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */,
+				B0066FF51FED55C300CCD3B7 /* PersonalPage.storyboard in Resources */,
 				C034D4E41FE9795E00801B82 /* Info.plist in Resources */,
-				C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */,
+				B0066FF71FED5BF300CCD3B7 /* Assets.xcassets in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
 				C034D4D01FE7857E00801B82 /* rent.storyboard in Resources */,
 			);
@@ -462,6 +475,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-second hand/Pods-second hand-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -471,6 +485,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -529,6 +544,9 @@
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
 				C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */,
 				C034D4E11FE91A4900801B82 /* rentNewPost.swift in Sources */,
+				B0D164261FED2C790026A11D /* PersonalPageController.swift in Sources */,
+				B0D164281FED30CD0026A11D /* MainNavigationController.swift in Sources */,
+				B0D164211FED235E0026A11D /* StartViewController.swift in Sources */,
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 				C0EC4B8D1FEA3133008A5FF8 /* rentPostViewController.swift in Sources */,
 				C034D4EA1FE98B8200801B82 /* rentPostTVCell.swift in Sources */,
@@ -702,7 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79ZVNGJ7FJ;
+				DEVELOPMENT_TEAM = 6NATB5LN22;
 				INFOPLIST_FILE = "second hand/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.second-hand765542418585";
@@ -719,7 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79ZVNGJ7FJ;
+				DEVELOPMENT_TEAM = 6NATB5LN22;
 				INFOPLIST_FILE = "second hand/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.second-hand765542418585";
