@@ -140,6 +140,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B0066FF81FED8E7200CCD3B7 /* personalpage */ = {
+			isa = PBXGroup;
+			children = (
+				B0D164251FED2C790026A11D /* PersonalPageController.swift */,
+				B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */,
+			);
+			path = personalpage;
+			sourceTree = "<group>";
+		};
 		C034D4D31FE7E41F00801B82 /* authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,11 +156,9 @@
 				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
 				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
 				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
-				B0D164251FED2C790026A11D /* PersonalPageController.swift */,
-				B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */,
-				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
 				B0D164201FED235E0026A11D /* StartViewController.swift */,
 				B0D164271FED30CD0026A11D /* MainNavigationController.swift */,
+				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
 				B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */,
 			);
 			path = authentication;
@@ -161,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				C034D4D31FE7E41F00801B82 /* authentication */,
+				B0066FF81FED8E7200CCD3B7 /* personalpage */,
 				C0EC4B8E1FEADD07008A5FF8 /* rentPost */,
 				C0BB44671FCE5DB100EF7BF3 /* second hand */,
 				C0BB447C1FCE5DB200EF7BF3 /* second handTests */,
