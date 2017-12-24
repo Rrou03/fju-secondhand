@@ -21,7 +21,7 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func startTapped(_ sender: Any) {
-        let mainNavigationController = storyboard?.instantiateViewController(withIdentifier: "MainNavigationController")as! MainNavigationController
+        let mainNavigationController = storyboard?.instantiateViewController(withIdentifier: "MainNavigationControllerID")as! MainNavigationController
         
         present(mainNavigationController,animated: true,completion: nil)
     }

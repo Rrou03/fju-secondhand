@@ -13,7 +13,7 @@
         <!--Main Navigation Controller-->
         <scene sceneID="0zV-DH-4xR">
             <objects>
-                <navigationController storyboardIdentifier="MainNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgs-nt-Xmw" customClass="MainNavigationController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xgs-nt-Xmw" customClass="MainNavigationController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eh7-Vj-qvz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -140,7 +140,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="登入button"/>
                                 <connections>
-                                    <action selector="signinB:" destination="aqi-b2-ZWw" eventType="touchUpInside" id="U6o-De-QBF"/>
+                                    <action selector="signinB:" destination="aqi-b2-ZWw" eventType="touchUpInside" id="rge-Hn-XTQ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="請輸入學生信箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-Mm-1TM" customClass="HoshiTextField" customModule="TextFieldEffects">
@@ -288,7 +288,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="登入button"/>
                                 <connections>
-                                    <segue destination="aqi-b2-ZWw" kind="show" identifier="backtoSigninPage" id="PPH-Lc-eaf"/>
+                                    <segue destination="aqi-b2-ZWw" kind="show" id="38c-Vc-Be9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -350,7 +350,7 @@
                 <viewControllerPlaceholder storyboardName="PersonalPage" id="RuZ-aj-mkh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tx-7Q-8b1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-802" y="538"/>
+            <point key="canvasLocation" x="118" y="538"/>
         </scene>
     </scenes>
     <resources>
@@ -366,6 +366,6 @@
         <image name="註冊成功！" width="112" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PPH-Lc-eaf"/>
+        <segue reference="PCB-85-A1U"/>
     </inferredMetricsTieBreakers>
 </document>
