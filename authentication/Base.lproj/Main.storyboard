@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgs-nt-Xmw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xgs-nt-Xmw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,12 +72,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-zO-FlF">
-                                <rect key="frame" x="9" y="605" width="255" height="62"/>
+                                <rect key="frame" x="-27" y="605" width="255" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Rent"/>
                                 <connections>
                                     <segue destination="31Z-qI-P0B" kind="show" identifier="showrent" id="sSz-Cf-9ik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-iA-7e5">
+                                <rect key="frame" x="221" y="609" width="129" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Product">
+                                    <color key="titleColor" red="0.40881761604689681" green="0.44940263306904937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="725-W2-HAW" kind="show" identifier="showproduct" id="SbI-wm-2Nl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,6 +100,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="82.3088455772114"/>
+        </scene>
+        <!--product-->
+        <scene sceneID="77T-rn-4H5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="product" id="725-W2-HAW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JQ-6a-B7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="569"/>
         </scene>
         <!--Signin View Controller-->
         <scene sceneID="bGd-WL-syo">
@@ -303,6 +322,6 @@
         <image name="註冊成功！" width="112" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PPH-Lc-eaf"/>
+        <segue reference="PCB-85-A1U"/>
     </inferredMetricsTieBreakers>
 </document>

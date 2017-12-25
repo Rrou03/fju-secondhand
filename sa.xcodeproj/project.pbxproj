@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
+		89170CDE1FEE81A0009032A0 /* product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89170CDD1FEE81A0009032A0 /* product.storyboard */; };
+		89170CE01FEE8288009032A0 /* productPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89170CDF1FEE8288009032A0 /* productPostViewController.swift */; };
+		89170CE21FEE8658009032A0 /* productVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89170CE11FEE8658009032A0 /* productVC.swift */; };
+		89170CE41FEE8922009032A0 /* productPostTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89170CE31FEE8922009032A0 /* productPostTVCell.swift */; };
+		89170CE61FEEBB27009032A0 /* productNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89170CE51FEEBB27009032A0 /* productNewPost.swift */; };
 		C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */; };
 		C034D4D01FE7857E00801B82 /* rent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034D4CF1FE7857E00801B82 /* rent.storyboard */; };
 		C034D4DF1FE8ED9100801B82 /* rentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034D4DE1FE8ED9100801B82 /* rentVC.swift */; };
@@ -52,6 +57,11 @@
 		4226280A4FFE93E2390F72BA /* Pods_second_hand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_hand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B903CE4FDF4C24AB03DE86 /* Pods-second handTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handTests/Pods-second handTests.release.xcconfig"; sourceTree = "<group>"; };
 		77F75BA36C3B30275D9DBB56 /* Pods-second handUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89170CDD1FEE81A0009032A0 /* product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = product.storyboard; sourceTree = "<group>"; };
+		89170CDF1FEE8288009032A0 /* productPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productPostViewController.swift; sourceTree = "<group>"; };
+		89170CE11FEE8658009032A0 /* productVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productVC.swift; sourceTree = "<group>"; };
+		89170CE31FEE8922009032A0 /* productPostTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productPostTVCell.swift; sourceTree = "<group>"; };
+		89170CE51FEEBB27009032A0 /* productNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productNewPost.swift; sourceTree = "<group>"; };
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		C034D4CF1FE7857E00801B82 /* rent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rent.storyboard; sourceTree = "<group>"; };
@@ -132,13 +142,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		89170CDC1FEE8153009032A0 /* productPost */ = {
+			isa = PBXGroup;
+			children = (
+				89170CDD1FEE81A0009032A0 /* product.storyboard */,
+				89170CDF1FEE8288009032A0 /* productPostViewController.swift */,
+				89170CE31FEE8922009032A0 /* productPostTVCell.swift */,
+				89170CE51FEEBB27009032A0 /* productNewPost.swift */,
+				89170CE11FEE8658009032A0 /* productVC.swift */,
+			);
+			path = productPost;
+			sourceTree = "<group>";
+		};
 		C034D4D31FE7E41F00801B82 /* authentication */ = {
 			isa = PBXGroup;
 			children = (
 				C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */,
 				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
-				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
 				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
+				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
 				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
 			);
 			path = authentication;
@@ -148,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C034D4D31FE7E41F00801B82 /* authentication */,
+				89170CDC1FEE8153009032A0 /* productPost */,
 				C0EC4B8E1FEADD07008A5FF8 /* rentPost */,
 				C0BB44671FCE5DB100EF7BF3 /* second hand */,
 				C0BB447C1FCE5DB200EF7BF3 /* second handTests */,
@@ -338,6 +361,7 @@
 				C072E9AF1FE0C38500A2DFE2 /* GoogleService-Info.plist in Resources */,
 				C034D4E41FE9795E00801B82 /* Info.plist in Resources */,
 				C0BB44701FCE5DB100EF7BF3 /* Assets.xcassets in Resources */,
+				89170CDE1FEE81A0009032A0 /* product.storyboard in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
 				C034D4D01FE7857E00801B82 /* rent.storyboard in Resources */,
 			);
@@ -527,8 +551,12 @@
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
 				C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
+				89170CE21FEE8658009032A0 /* productVC.swift in Sources */,
 				C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */,
+				89170CE01FEE8288009032A0 /* productPostViewController.swift in Sources */,
 				C034D4E11FE91A4900801B82 /* rentNewPost.swift in Sources */,
+				89170CE41FEE8922009032A0 /* productPostTVCell.swift in Sources */,
+				89170CE61FEEBB27009032A0 /* productNewPost.swift in Sources */,
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 				C0EC4B8D1FEA3133008A5FF8 /* rentPostViewController.swift in Sources */,
 				C034D4EA1FE98B8200801B82 /* rentPostTVCell.swift in Sources */,

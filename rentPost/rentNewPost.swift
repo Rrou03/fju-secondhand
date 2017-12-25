@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import SwiftyJSON
-
+//SwiftyJSON是个使用Swift语言编写的开源库，可以让我们很方便地处理JSON数据（解析数据、生成数据)
 class rentNewPost {
     
     var title: String!
