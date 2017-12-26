@@ -181,6 +181,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lnC-62-L0b">
                                 <rect key="frame" x="0.0" y="171" width="375" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LQT-XO-5zS">
+                                    <rect key="frame" x="0.0" y="192" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="cell" rowHeight="164" id="eAj-yR-nFO" customClass="rentPostTVCell" customModule="second_hand" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="164"/>
@@ -298,6 +303,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOV-e6-3M8">
+                                <rect key="frame" x="167" y="76" width="41" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="個人bar"/>
+                                <connections>
+                                    <action selector="gotopersonalpage:" destination="fvC-we-Rqb" eventType="touchUpInside" id="5Bx-bM-473"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -351,6 +364,7 @@
     </scenes>
     <resources>
         <image name="menu" width="377" height="28"/>
+        <image name="個人bar" width="74" height="84"/>
         <image name="排序" width="79" height="16"/>
         <image name="新增圖片" width="193" height="161"/>
         <image name="新增房屋鍵" width="48" height="35"/>
