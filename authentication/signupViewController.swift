@@ -41,13 +41,14 @@ class signupViewController: UIViewController {
                         self.uid = user.uid
                     }
                     print("You have successfully signed up")
-                    Database.database().reference(withPath: "User/Profile/Username").setValue(self.userNameTextField.text)
-                    Database.database().reference(withPath: "User/Profile/Password").setValue(self.userPasswordTextField.text)
-                    Database.database().reference(withPath: "User/Profile/Email").setValue(self.userEmailTextField.text)
-                    Database.database().reference(withPath: "User/Profile/ID").setValue(self.uid)
+                    Database.database().reference(withPath: "User/\(self.uid)/Profile/Username").setValue(self.userNameTextField.text)
+                    Database.database().reference(withPath: "User/\(self.uid)/Profile/Password").setValue(self.userPasswordTextField.text)
+                    Database.database().reference(withPath: "User/\(self.uid)/Profile/Email").setValue(self.userEmailTextField.text)
+                    
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "SuccessViewControllerID") as! SuccessViewController
                     self.present(vc, animated: true, completion: nil)
+                    
                 }else{
                     print("fail",error.debugDescription)
                 }

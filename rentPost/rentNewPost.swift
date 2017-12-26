@@ -18,6 +18,10 @@ class rentNewPost {
     var location: String!
     var type: String!
     var imageDownloadURL: String!
+    var postID: String!
+    var LikeList: [String] = [String]()
+    var list: String!
+
     private var image = UIImage()
     
     init(image: UIImage,title:String, price: String, goal: String, location: String, type: String){
@@ -27,6 +31,7 @@ class rentNewPost {
         self.goal = goal
         self.location = location
         self.type = type
+        
     }
     
     init (snapshot: DataSnapshot){
@@ -38,7 +43,15 @@ class rentNewPost {
         self.goal = json["goal"].stringValue
         self.location = json["location"].stringValue
         self.type = json["type"].stringValue
+        self.postID = json["PostID"].stringValue
+        self.list = json["LikeUser"][(Auth.auth().currentUser?.uid)!].stringValue
+        
+        print(self.list)
+       
+        
+        
     }
+    
     
     func save(){
         //1. create a new database reference
@@ -58,7 +71,8 @@ class rentNewPost {
                 "price" : self.price,
                 "goal" : self.goal,
                 "location" : self.location,
-                "type" : self.type
+                "type" : self.type,
+                "PostID": newRentPostKey
                 ]
              newRentPostRef.setValue(newRentPostDictionary)
             })
@@ -66,3 +80,4 @@ class rentNewPost {
         }
     }
 }
+
