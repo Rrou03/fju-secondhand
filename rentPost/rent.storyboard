@@ -234,14 +234,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltk-aS-YWm" userLabel="Favorite Button">
-                                                    <rect key="frame" x="302" y="215" width="32" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" backgroundImage="Favorite"/>
-                                                    <connections>
-                                                        <action selector="deleteFavorite:" destination="eAj-yR-nFO" eventType="touchUpInside" id="oye-i2-weT"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5D-m1-Hql" userLabel="unFavorite Button">
                                                     <rect key="frame" x="302" y="264" width="32" height="32"/>
                                                     <state key="normal" image="no favorite"/>
@@ -249,9 +241,19 @@
                                                         <action selector="addFavorite:" destination="eAj-yR-nFO" eventType="touchUpInside" id="aLv-SS-LIg"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltk-aS-YWm" userLabel="Favorite Button">
+                                                    <rect key="frame" x="302" y="264" width="32" height="32"/>
+                                                    <state key="normal" backgroundImage="Favorite"/>
+                                                    <connections>
+                                                        <action selector="deleteFavorite:" destination="eAj-yR-nFO" eventType="touchUpInside" id="oye-i2-weT"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="DHe-SO-3pf" secondAttribute="bottom" constant="58.5" id="1pX-P6-nms"/>
+                                                <constraint firstItem="ltk-aS-YWm" firstAttribute="top" secondItem="JYk-d5-9DH" secondAttribute="top" constant="264" id="2f5-RO-Y8I"/>
+                                                <constraint firstAttribute="trailing" secondItem="ltk-aS-YWm" secondAttribute="trailing" constant="8" id="3Uv-tT-Zdw"/>
+                                                <constraint firstItem="ltk-aS-YWm" firstAttribute="leading" secondItem="JYk-d5-9DH" secondAttribute="leading" constant="302" id="8e0-El-eFK"/>
                                                 <constraint firstItem="qeV-4I-aDI" firstAttribute="leading" secondItem="JYk-d5-9DH" secondAttribute="leadingMargin" constant="15" id="DnO-r1-h4z"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qeV-4I-aDI" secondAttribute="bottom" constant="99" id="Fmx-ca-Trl"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="f9O-TX-p9T" secondAttribute="bottom" constant="41" id="Ggi-Yl-EvA"/>
@@ -259,6 +261,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="T5D-m1-Hql" secondAttribute="trailing" constant="8" id="INb-QN-gN9"/>
                                                 <constraint firstItem="mx7-cu-YvE" firstAttribute="leading" secondItem="JYk-d5-9DH" secondAttribute="leading" constant="154" id="LkT-Np-UK5"/>
                                                 <constraint firstAttribute="bottom" secondItem="mx7-cu-YvE" secondAttribute="bottom" constant="8" id="OJx-M6-omV"/>
+                                                <constraint firstAttribute="bottom" secondItem="ltk-aS-YWm" secondAttribute="bottom" constant="2.5" id="Oj1-G3-AK5"/>
                                                 <constraint firstItem="f9O-TX-p9T" firstAttribute="leading" secondItem="JYk-d5-9DH" secondAttribute="leadingMargin" constant="15" id="Qj8-sX-966"/>
                                                 <constraint firstItem="yVN-go-58d" firstAttribute="top" secondItem="JYk-d5-9DH" secondAttribute="top" constant="270" id="TbP-49-GsO"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="qeV-4I-aDI" secondAttribute="trailing" constant="12" id="XDm-Pu-bS0"/>
