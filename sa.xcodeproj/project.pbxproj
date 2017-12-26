@@ -10,6 +10,11 @@
 		6570F0E79867120D0331CF7D /* Pods_second_handTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3642AF2B3379108580376FB3 /* Pods_second_handTests.framework */; };
 		B0066FF51FED55C300CCD3B7 /* PersonalPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */; };
 		B0066FF71FED5BF300CCD3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */; };
+		B0066FFA1FEE6EA200CCD3B7 /* ChangeDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0066FF91FEE6EA200CCD3B7 /* ChangeDataViewController.swift */; };
+		B0066FFD1FEE89A300CCD3B7 /* Comic Sans MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0066FFB1FEE898A00CCD3B7 /* Comic Sans MS.ttf */; };
+		B0066FFE1FEE89A300CCD3B7 /* Comic Sans MS Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0066FFC1FEE899500CCD3B7 /* Comic Sans MS Bold.ttf */; };
+		B00670011FEE961700CCD3B7 /* PersonalPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00670001FEE961700CCD3B7 /* PersonalPageNavigationController.swift */; };
+		B00670051FEEC59300CCD3B7 /* UIImageViewWithMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00670041FEEC59300CCD3B7 /* UIImageViewWithMask.swift */; };
 		B0D164211FED235E0026A11D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164201FED235E0026A11D /* StartViewController.swift */; };
 		B0D164261FED2C790026A11D /* PersonalPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164251FED2C790026A11D /* PersonalPageController.swift */; };
 		B0D164281FED30CD0026A11D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D164271FED30CD0026A11D /* MainNavigationController.swift */; };
@@ -59,6 +64,11 @@
 		91BB8C44273A9E5CD12FFA22 /* Pods-second handUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second handUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second handUITests/Pods-second handUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalPage.storyboard; sourceTree = "<group>"; };
 		B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0066FF91FEE6EA200CCD3B7 /* ChangeDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDataViewController.swift; sourceTree = "<group>"; };
+		B0066FFB1FEE898A00CCD3B7 /* Comic Sans MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS.ttf"; sourceTree = "<group>"; };
+		B0066FFC1FEE899500CCD3B7 /* Comic Sans MS Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Sans MS Bold.ttf"; sourceTree = "<group>"; };
+		B00670001FEE961700CCD3B7 /* PersonalPageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageNavigationController.swift; sourceTree = "<group>"; };
+		B00670041FEEC59300CCD3B7 /* UIImageViewWithMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewWithMask.swift; sourceTree = "<group>"; };
 		B0D164201FED235E0026A11D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B0D164251FED2C790026A11D /* PersonalPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalPageController.swift; sourceTree = "<group>"; };
 		B0D164271FED30CD0026A11D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -145,20 +155,33 @@
 			children = (
 				B0D164251FED2C790026A11D /* PersonalPageController.swift */,
 				B0066FF41FED55C300CCD3B7 /* PersonalPage.storyboard */,
+				B0066FF91FEE6EA200CCD3B7 /* ChangeDataViewController.swift */,
+				B00670001FEE961700CCD3B7 /* PersonalPageNavigationController.swift */,
+				B00670041FEEC59300CCD3B7 /* UIImageViewWithMask.swift */,
 			);
 			path = personalpage;
+			sourceTree = "<group>";
+		};
+		B0066FFF1FEE8A0800CCD3B7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B0066FFC1FEE899500CCD3B7 /* Comic Sans MS Bold.ttf */,
+				B0066FFB1FEE898A00CCD3B7 /* Comic Sans MS.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		C034D4D31FE7E41F00801B82 /* authentication */ = {
 			isa = PBXGroup;
 			children = (
 				C02B42C61FDFFA7C00E250B3 /* signupViewController.swift */,
+				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
 				C0BB446A1FCE5DB100EF7BF3 /* ViewController.swift */,
 				C072E9B11FE3F18900A2DFE2 /* SuccessViewController.swift */,
-				C072E9B51FE41D4400A2DFE2 /* signinViewController.swift */,
 				B0D164201FED235E0026A11D /* StartViewController.swift */,
 				B0D164271FED30CD0026A11D /* MainNavigationController.swift */,
 				C0BB446C1FCE5DB100EF7BF3 /* Main.storyboard */,
+				B0066FFF1FEE8A0800CCD3B7 /* fonts */,
 				B0066FF61FED5BF300CCD3B7 /* Assets.xcassets */,
 			);
 			path = authentication;
@@ -359,6 +382,8 @@
 				B0066FF51FED55C300CCD3B7 /* PersonalPage.storyboard in Resources */,
 				C034D4E41FE9795E00801B82 /* Info.plist in Resources */,
 				B0066FF71FED5BF300CCD3B7 /* Assets.xcassets in Resources */,
+				B0066FFD1FEE89A300CCD3B7 /* Comic Sans MS.ttf in Resources */,
+				B0066FFE1FEE89A300CCD3B7 /* Comic Sans MS Bold.ttf in Resources */,
 				C0BB446E1FCE5DB100EF7BF3 /* Main.storyboard in Resources */,
 				C034D4D01FE7857E00801B82 /* rent.storyboard in Resources */,
 			);
@@ -547,11 +572,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00670051FEEC59300CCD3B7 /* UIImageViewWithMask.swift in Sources */,
 				C0BB446B1FCE5DB100EF7BF3 /* ViewController.swift in Sources */,
 				C072E9B61FE41D4400A2DFE2 /* signinViewController.swift in Sources */,
+				B00670011FEE961700CCD3B7 /* PersonalPageNavigationController.swift in Sources */,
 				C02B42C71FDFFA7C00E250B3 /* signupViewController.swift in Sources */,
 				C072E9B21FE3F18900A2DFE2 /* SuccessViewController.swift in Sources */,
 				C034D4E11FE91A4900801B82 /* rentNewPost.swift in Sources */,
+				B0066FFA1FEE6EA200CCD3B7 /* ChangeDataViewController.swift in Sources */,
 				B0D164261FED2C790026A11D /* PersonalPageController.swift in Sources */,
 				B0D164281FED30CD0026A11D /* MainNavigationController.swift in Sources */,
 				B0D164211FED235E0026A11D /* StartViewController.swift in Sources */,

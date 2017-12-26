@@ -14,6 +14,13 @@ class rentPostViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var table: UITableView!
     var posts = [rentNewPost]()
     
+    //利用按鈕到個人頁面
+    @IBAction func gotopersonalpage(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "PersonalPage", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier:"PersonalPageNavigationControllerID") as! PersonalPageNavigationController
+        self.present(vc,animated: true,completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //download posts
