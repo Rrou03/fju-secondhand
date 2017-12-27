@@ -69,7 +69,9 @@ class rentVC: UIViewController {
     @IBAction func addPost(_ sender: Any) {
         let newPost = rentNewPost(image: takenImage,title: titleField.text!, price: priceField.text!, goal: goalField.text!, location: locationField.text!, type: typeField.text!)
         newPost.save()
-        self.dismiss(animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "rent", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NavigationViewControllerID") as! NavigationViewController
+        self.present(vc, animated: true, completion: nil)
     }
 }
 extension rentVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate

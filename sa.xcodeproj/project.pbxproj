@@ -25,6 +25,7 @@
 		C0BB44731FCE5DB100EF7BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BB44711FCE5DB100EF7BF3 /* LaunchScreen.storyboard */; };
 		C0BB44891FCE5DB200EF7BF3 /* second_handUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB44881FCE5DB200EF7BF3 /* second_handUITests.swift */; };
 		C0EC4B8D1FEA3133008A5FF8 /* rentPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EC4B8C1FEA3133008A5FF8 /* rentPostViewController.swift */; };
+		C0FE97161FEBCAA100CACCEB /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FE97151FEBCAA000CACCEB /* NavigationViewController.swift */; };
 		D4D144B58FAC42A698223F7C /* Pods_second_handUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F304C4EA1473C334F62A224F /* Pods_second_handUITests.framework */; };
 		ED9F32DBCF5621E3BC68F4F7 /* Pods_second_hand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4226280A4FFE93E2390F72BA /* Pods_second_hand.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		C0BB448A1FCE5DB200EF7BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BB44981FCFE3F200EF7BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C0EC4B8C1FEA3133008A5FF8 /* rentPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentPostViewController.swift; sourceTree = "<group>"; };
+		C0FE97151FEBCAA000CACCEB /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		CF663E93C5D23118891C86F2 /* Pods-second hand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second hand.release.xcconfig"; path = "Pods/Target Support Files/Pods-second hand/Pods-second hand.release.xcconfig"; sourceTree = "<group>"; };
 		D02C88A6D9697B90DB28FB26 /* Pods-second hand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-second hand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-second hand/Pods-second hand.debug.xcconfig"; sourceTree = "<group>"; };
 		F304C4EA1473C334F62A224F /* Pods_second_handUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_second_handUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 				C034D4E91FE98B8200801B82 /* rentPostTVCell.swift */,
 				C034D4E01FE91A4900801B82 /* rentNewPost.swift */,
 				C034D4DE1FE8ED9100801B82 /* rentVC.swift */,
+				C0FE97151FEBCAA000CACCEB /* NavigationViewController.swift */,
 			);
 			path = rentPost;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				C0BB44691FCE5DB100EF7BF3 /* AppDelegate.swift in Sources */,
 				C0EC4B8D1FEA3133008A5FF8 /* rentPostViewController.swift in Sources */,
 				C034D4EA1FE98B8200801B82 /* rentPostTVCell.swift in Sources */,
+				C0FE97161FEBCAA100CACCEB /* NavigationViewController.swift in Sources */,
 				C034D4DF1FE8ED9100801B82 /* rentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

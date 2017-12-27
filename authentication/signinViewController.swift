@@ -37,8 +37,9 @@ class signinViewController: UIViewController {
                     }
                     Database.database().reference(withPath:"online status/\(self.uid)").setValue("ON")
                     let storyboard = UIStoryboard(name: "rent", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "rentPostViewControllerID") as! rentPostViewController
+                    let vc = storyboard.instantiateViewController(withIdentifier: "NavigationViewControllerID") as! NavigationViewController
                     self.present(vc, animated: true, completion: nil)
+                   
                 }else{
                     let errorController = UIAlertController(title: "Error", message: "帳號或密碼錯誤", preferredStyle: .alert)
                     let errorAction = UIAlertAction(title: "OK", style: .default, handler: nil)
