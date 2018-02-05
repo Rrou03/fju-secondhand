@@ -16,6 +16,9 @@ class productPostViewController: UIViewController, UITableViewDelegate, UITableV
     
     //view 被載入時
     override func viewDidLoad() {
+        
+        print("this is test Chloe")
+        
         super.viewDidLoad()
         //download posts
         // 1. create a reference to a productPost in the database
