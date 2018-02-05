@@ -11,6 +11,8 @@ target 'second hand' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'SwiftyJSON'
+  pod 'SwiftKeychainWrapper'
+
 
 
 
