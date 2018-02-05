@@ -51,6 +51,7 @@ class signupViewController: UIViewController {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "SuccessViewControllerID") as! SuccessViewController
                     self.present(vc, animated: true, completion: nil)
+                    
                 }else{
                     print("fail",error.debugDescription)
                 }

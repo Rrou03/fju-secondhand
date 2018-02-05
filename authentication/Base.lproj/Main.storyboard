@@ -15,31 +15,23 @@
             <objects>
                 <viewController storyboardIdentifier="ViewControllerID" id="BYZ-38-t0r" customClass="ViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bubbleBg" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-MN-X4g">
-                                <rect key="frame" x="49" y="115" width="326" height="455"/>
+                                <rect key="frame" x="49" y="106" width="326" height="455"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I82-SD-wZM">
-                                <rect key="frame" x="97" y="540" width="181" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Big Button"/>
-                                <connections>
-                                    <segue destination="yhp-zy-7Zx" kind="show" identifier="showSignUppage" id="1PX-mU-WpM"/>
-                                </connections>
-                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="second Label" translatesAutoresizingMaskIntoConstraints="NO" id="Mav-WK-sZ1">
-                                <rect key="frame" x="9" y="214" width="255" height="79"/>
+                                <rect key="frame" x="16" y="100" width="255" height="79"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="hand Label" translatesAutoresizingMaskIntoConstraints="NO" id="eNA-5M-b7f">
-                                <rect key="frame" x="108" y="301" width="222" height="87"/>
+                                <rect key="frame" x="117" y="187" width="222" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfr-a0-Rfv">
-                                <rect key="frame" x="97" y="457" width="181" height="46"/>
+                                <rect key="frame" x="97" y="340" width="181" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Big Button Copy"/>
                                 <connections>
@@ -61,7 +53,7 @@
             <objects>
                 <viewController storyboardIdentifier="signinViewControllerID" id="aqi-b2-ZWw" customClass="signinViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8k7-Uu-zjH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bubbleBg" translatesAutoresizingMaskIntoConstraints="NO" id="8R8-7t-SMH">
@@ -135,7 +127,7 @@
             <objects>
                 <viewController storyboardIdentifier="signupViewControllerID" id="yhp-zy-7Zx" customClass="signupViewController" customModule="second_hand" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tIH-YR-rVs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="bubbleBg" translatesAutoresizingMaskIntoConstraints="NO" id="1F6-uQ-2Aa">

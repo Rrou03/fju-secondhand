@@ -41,7 +41,7 @@ class signinViewController: UIViewController {
                  Database.database().reference(withPath:"online status/\(self.uid)").setValue("ON")
                     
                     let storyboard = UIStoryboard(name: "rent", bundle: nil)
-                    let vc = storyboard.instantiateViewController(withIdentifier: "rentPostViewControllerID") as! rentPostViewController
+                    let vc = storyboard.instantiateViewController(withIdentifier: "NavigationViewControllerID") as! NavigationViewController
                     self.present(vc, animated: true, completion: nil)
                     
                    
